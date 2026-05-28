@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FDRP Practice Lab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Year 7 IGCSE practice</p>
+        <h1>FDRP Practice Lab</h1>
+        <p class="header-copy">Fractions, decimals, ratios and percentages through diagrams, reverse thinking and word problems.</p>
+      </div>
+      <div class="header-stats" aria-label="Question bank summary">
+        <span><strong>75</strong> questions</span>
+        <span><strong>3</strong> levels</span>
+        <span><strong>0</strong> multiple choice</span>
+      </div>
+    </header>
+
+    <nav class="main-tabs" aria-label="Main sections">
+      <button class="tab-button active" type="button" data-section="guide">Guide</button>
+      <button class="tab-button" type="button" data-section="bank">Question Bank</button>
+    </nav>
+
+    <main>
+      <section id="guide" class="app-section active" aria-labelledby="guide-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Learn the structure</p>
+            <h2 id="guide-title">Guide</h2>
+          </div>
+          <p>Most mistakes in these topics come from choosing the wrong whole. Every diagram below starts by naming the whole, then shows how to move forwards or backwards.</p>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-panel wide">
+            <div class="guide-text">
+              <p class="guide-label">Reverse percentages</p>
+              <h3>Discount: the sale price is not 100%</h3>
+              <p>If a jacket is sold for 20% off at £80, the £80 is 80% of the original price, not 100%. Work backwards from 80% to 100%.</p>
+              <ol class="worked-list">
+                <li>Original price = 100%</li>
+                <li>20% discount means the sale price is 80%</li>
+                <li>80% = £80, so 1% = £1</li>
+                <li>100% = £100</li>
+              </ol>
+            </div>
+            <div class="diagram percent-diagram" aria-label="Bar model showing 80 percent equals 80 pounds and 100 percent equals 100 pounds">
+              <div class="bar-title">Original price = 100%</div>
+              <div class="percent-bar full">
+                <span class="bar-fill discount" style="width: 80%;">80% paid = £80</span>
+                <span class="bar-fill missing" style="width: 20%;">20% off</span>
+              </div>
+              <div class="bar-notes">
+                <span>Do not do £80 + 20% of £80 = £96.</span>
+                <span>The 20% was taken from the original £100.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="guide-panel wide">
+            <div class="guide-text">
+              <p class="guide-label">Profit and mark-up</p>
+              <h3>Profit: the selling price can be more than 100%</h3>
+              <p>If a shop sells an item for £120 after making 20% profit, the £120 is 120% of the cost price.</p>
+              <ol class="worked-list">
+                <li>Cost price = 100%</li>
+                <li>20% profit makes the selling price 120%</li>
+                <li>120% = £120, so 1% = £1</li>
+                <li>100% = £100</li>
+              </ol>
+            </div>
+            <div class="diagram percent-diagram" aria-label="Bar model showing 120 percent equals 120 pounds and 100 percent equals 100 pounds">
+              <div class="bar-title">Cost price = 100%</div>
+              <div class="percent-bar overflow">
+                <span class="bar-fill base" style="width: 83.333%;">100% cost = £100</span>
+                <span class="bar-fill profit" style="width: 16.667%;">20% profit</span>
+              </div>
+              <div class="bar-notes">
+                <span>Selling price = 120%</span>
+                <span>Cost price = 120 ÷ 1.2 = £100</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="guide-panel">
+            <p class="guide-label">The whole</p>
+            <h3>Name 100% before calculating</h3>
+            <p>Ask: “100% of what?” In discount questions, the original price is 100%. In profit questions, the cost price is 100%. In a test score, the total marks are 100%.</p>
+            <div class="concept-table">
+              <div><strong>Situation</strong><strong>100% means</strong></div>
+              <div><span>20% discount</span><span>original price</span></div>
+              <div><span>20% profit</span><span>cost price</span></div>
+              <div><span>40% of pupils</span><span>all pupils</span></div>
+              <div><span>VAT added</span><span>price before VAT</span></div>
+            </div>
+          </article>
+
+          <article class="guide-panel">
+            <p class="guide-label">Fractions, decimals, percentages</p>
+            <h3>Three languages, one value</h3>
+            <p>A percentage is “out of 100”. A decimal is a part of 1. A fraction shows equal parts. Convert to whichever form makes the question easier.</p>
+            <div class="fraction-strip" aria-label="Fraction strip showing three quarters equals 0.75 equals 75 percent">
+              <span></span><span></span><span></span><span class="empty"></span>
+            </div>
+            <div class="equivalence-row">
+              <span>3/4</span>
+              <span>0.75</span>
+              <span>75%</span>
+            </div>
+          </article>
+
+          <article class="guide-panel">
+            <p class="guide-label">Ratio</p>
+            <h3>Parts first, value second</h3>
+            <p>For a ratio of 3:2 with 25 pupils, there are 5 equal parts. Each part is 25 ÷ 5 = 5 pupils.</p>
+            <div class="ratio-blocks" aria-label="Ratio blocks showing 3 blue parts and 2 coral parts">
+              <span class="blue"></span><span class="blue"></span><span class="blue"></span>
+              <span class="coral"></span><span class="coral"></span>
+            </div>
+            <p class="mini-note">3 parts = 15 pupils, 2 parts = 10 pupils.</p>
+          </article>
+
+          <article class="guide-panel">
+            <p class="guide-label">Two-step percentage</p>
+            <h3>Work on what is left</h3>
+            <p>If you spend 40% of your money, you have 60% left. If you then spend half of what is left, that half is half of the 60%, not half of the original.</p>
+            <div class="stacked-bars">
+              <div><span class="spent" style="width: 40%;">40% spent</span><span style="width: 60%;">60% left</span></div>
+              <div><span class="spent" style="width: 40%;">first spent</span><span class="spent-later" style="width: 30%;">half of left</span><span style="width: 30%;">saved</span></div>
+            </div>
+          </article>
+
+          <article class="guide-panel wide">
+            <div class="guide-text">
+              <p class="guide-label">A reliable method</p>
+              <h3>Use D-R-A-W for word problems</h3>
+              <p>When a question feels like a story, slow it down and make the hidden structure visible.</p>
+            </div>
+            <div class="method-grid">
+              <div><strong>D</strong><span>Decide the whole: what is 100% or the total number of parts?</span></div>
+              <div><strong>R</strong><span>Represent it with a bar, fraction strip or ratio table.</span></div>
+              <div><strong>A</strong><span>Apply each change in order: discount, profit, VAT, remaining amount.</span></div>
+              <div><strong>W</strong><span>Work backwards when the final amount is given.</span></div>
+            </div>
+          </article>
+
+          <article class="guide-panel wide">
+            <div class="guide-text">
+              <p class="guide-label">Common traps</p>
+              <h3>Checks before final answer</h3>
+            </div>
+            <div class="trap-grid">
+              <div>
+                <strong>Discount final price is smaller.</strong>
+                <span>If £80 is after 20% off, the original must be more than £80.</span>
+              </div>
+              <div>
+                <strong>Profit final price is bigger.</strong>
+                <span>If £120 includes 20% profit, the cost must be less than £120.</span>
+              </div>
+              <div>
+                <strong>Successive changes do not cancel.</strong>
+                <span>Down 10% then up 10% gives 99% of the original.</span>
+              </div>
+              <div>
+                <strong>Ratios are not fractions until you add parts.</strong>
+                <span>In 3:2, the first share is 3 out of 5 parts.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="bank" class="app-section" aria-labelledby="bank-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Practice by level</p>
+            <h2 id="bank-title">Question Bank</h2>
+          </div>
+          <p>Type an answer in your own words. The checker looks for the required numbers, fractions or ratios, then shows the full model answer.</p>
+        </div>
+
+        <div class="bank-layout">
+          <aside class="question-sidebar" aria-label="Question controls">
+            <div class="progress-panel">
+              <div>
+                <span class="progress-number" id="answered-count">0</span>
+                <span class="progress-label">checked</span>
+              </div>
+              <div>
+                <span class="progress-number" id="correct-count">0</span>
+                <span class="progress-label">correct</span>
+              </div>
+              <button id="reset-progress" class="ghost-button" type="button">Reset</button>
+            </div>
+
+            <div class="level-tabs" role="tablist" aria-label="Question levels">
+              <button class="level-tab active" type="button" data-level="basic">Basic</button>
+              <button class="level-tab" type="button" data-level="intermediate">Intermediate</button>
+              <button class="level-tab" type="button" data-level="advanced">Advanced</button>
+            </div>
+
+            <label class="search-label" for="question-search">Search questions</label>
+            <input id="question-search" class="search-input" type="search" placeholder="topic, word, skill">
+
+            <div id="question-list" class="question-list"></div>
+          </aside>
+
+          <article class="question-workspace" aria-live="polite">
+            <div id="question-card"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="data/questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

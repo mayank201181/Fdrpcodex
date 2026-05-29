@@ -2,6 +2,7 @@ const questions = window.FDRP_QUESTIONS || [];
 
 const state = {
   section: "guide",
+  guidePage: "foundation",
   level: "basic",
   selectedId: "B01",
   query: "",
@@ -24,6 +25,7 @@ const topicNames = {
 
 function init() {
   bindMainTabs();
+  bindGuideTabs();
   bindQuestionControls();
   renderQuestionList();
   renderQuestion(findQuestion(state.selectedId) || questions[0]);
@@ -42,6 +44,23 @@ function bindMainTabs() {
 
       document.querySelectorAll(".app-section").forEach((item) => {
         item.classList.toggle("active", item.id === section);
+      });
+    });
+  });
+}
+
+function bindGuideTabs() {
+  document.querySelectorAll(".guide-tab").forEach((button) => {
+    button.addEventListener("click", () => {
+      const guidePage = button.dataset.guide;
+      state.guidePage = guidePage;
+
+      document.querySelectorAll(".guide-tab").forEach((item) => {
+        item.classList.toggle("active", item === button);
+      });
+
+      document.querySelectorAll(".guide-page").forEach((item) => {
+        item.classList.toggle("active", item.id === `guide-${guidePage}`);
       });
     });
   });

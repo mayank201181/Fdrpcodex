@@ -4,7 +4,7 @@ A static web app for Year 7 IGCSE-style practice on fractions, decimals, ratios 
 
 ## What is included
 
-- A visual guide section with bar models, ratio blocks and common traps.
+- A seven-chapter visual guide covering foundations, fractions, decimals, ratios, percentages, reverse percentages and word-problem thinking.
 - A 75-question word-problem bank:
   - 25 basic questions
   - 25 intermediate questions

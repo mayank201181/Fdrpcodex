@@ -29,149 +29,452 @@
       <section id="guide" class="app-section active" aria-labelledby="guide-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Learn the structure</p>
-            <h2 id="guide-title">Guide</h2>
+            <p class="eyebrow">FDRP learning path</p>
+            <h2 id="guide-title">Step-by-Step Guide</h2>
           </div>
-          <p>Most mistakes in these topics come from choosing the wrong whole. Every diagram below starts by naming the whole, then shows how to move forwards or backwards.</p>
+          <p>FDRP means fractions, decimals, ratios and percentages. This guide starts with the easy language, then builds towards reverse percentages and multi-step word problems.</p>
         </div>
 
-        <div class="guide-grid">
-          <article class="guide-panel wide">
-            <div class="guide-text">
-              <p class="guide-label">Reverse percentages</p>
-              <h3>Discount: the sale price is not 100%</h3>
-              <p>If a jacket is sold for 20% off at £80, the £80 is 80% of the original price, not 100%. Work backwards from 80% to 100%.</p>
-              <ol class="worked-list">
-                <li>Original price = 100%</li>
-                <li>20% discount means the sale price is 80%</li>
-                <li>80% = £80, so 1% = £1</li>
-                <li>100% = £100</li>
-              </ol>
-            </div>
-            <div class="diagram percent-diagram" aria-label="Bar model showing 80 percent equals 80 pounds and 100 percent equals 100 pounds">
-              <div class="bar-title">Original price = 100%</div>
-              <div class="percent-bar full">
-                <span class="bar-fill discount" style="width: 80%;">80% paid = £80</span>
-                <span class="bar-fill missing" style="width: 20%;">20% off</span>
-              </div>
-              <div class="bar-notes">
-                <span>Do not do £80 + 20% of £80 = £96.</span>
-                <span>The 20% was taken from the original £100.</span>
-              </div>
-            </div>
-          </article>
+        <div class="guide-shell">
+          <aside class="guide-nav" aria-label="Guide chapters">
+            <button class="guide-tab active" type="button" data-guide="foundation"><span>1</span> Foundations</button>
+            <button class="guide-tab" type="button" data-guide="fractions"><span>2</span> Fractions</button>
+            <button class="guide-tab" type="button" data-guide="decimals"><span>3</span> Decimals</button>
+            <button class="guide-tab" type="button" data-guide="ratios"><span>4</span> Ratios</button>
+            <button class="guide-tab" type="button" data-guide="percentages"><span>5</span> Percentages</button>
+            <button class="guide-tab" type="button" data-guide="reverse"><span>6</span> Reverse %</button>
+            <button class="guide-tab" type="button" data-guide="wordproblems"><span>7</span> Word Problems</button>
+          </aside>
 
-          <article class="guide-panel wide">
-            <div class="guide-text">
-              <p class="guide-label">Profit and mark-up</p>
-              <h3>Profit: the selling price can be more than 100%</h3>
-              <p>If a shop sells an item for £120 after making 20% profit, the £120 is 120% of the cost price.</p>
-              <ol class="worked-list">
-                <li>Cost price = 100%</li>
-                <li>20% profit makes the selling price 120%</li>
-                <li>120% = £120, so 1% = £1</li>
-                <li>100% = £100</li>
-              </ol>
-            </div>
-            <div class="diagram percent-diagram" aria-label="Bar model showing 120 percent equals 120 pounds and 100 percent equals 100 pounds">
-              <div class="bar-title">Cost price = 100%</div>
-              <div class="percent-bar overflow">
-                <span class="bar-fill base" style="width: 83.333%;">100% cost = £100</span>
-                <span class="bar-fill profit" style="width: 16.667%;">20% profit</span>
+          <div class="guide-pages">
+            <article id="guide-foundation" class="guide-page active">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 1</p>
+                <h3>What FDRP Means</h3>
+                <p>Fractions, decimals, ratios and percentages are four ways to describe parts of a whole. Most harder questions mix two or three of these languages, so the first skill is knowing what each sentence is really saying.</p>
               </div>
-              <div class="bar-notes">
-                <span>Selling price = 120%</span>
-                <span>Cost price = 120 ÷ 1.2 = £100</span>
+
+              <div class="lesson-grid">
+                <section class="lesson-card">
+                  <h4>The big idea: name the whole</h4>
+                  <p>Before calculating, ask: what is the total? What is 1 whole? What is 100%? What are all the ratio parts?</p>
+                  <div class="key-table">
+                    <div><strong>Words in question</strong><strong>The whole is</strong></div>
+                    <div><span>18 out of 30</span><span>30</span></div>
+                    <div><span>20% discount</span><span>original price</span></div>
+                    <div><span>20% profit</span><span>cost price</span></div>
+                    <div><span>ratio 3:2</span><span>5 equal parts</span></div>
+                    <div><span>half of what remains</span><span>the remaining amount</span></div>
+                  </div>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Four languages for the same amount</h4>
+                  <p>The same value can be written in several forms. A strong student chooses the form that makes the problem easiest.</p>
+                  <div class="conversion-flow" aria-label="Conversion diagram for fraction decimal percentage and ratio">
+                    <span>3/4</span>
+                    <span>0.75</span>
+                    <span>75%</span>
+                    <span>3:1 split</span>
+                  </div>
+                  <p class="mini-note">In a 3:1 split, the first part is 3 out of 4 parts, so it is 3/4 = 0.75 = 75%.</p>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Language clues</h4>
+                  <div class="clue-list">
+                    <div><strong>of</strong><span>multiply: 3/5 of 60 means 3/5 × 60</span></div>
+                    <div><strong>out of</strong><span>make a fraction: 18 out of 30 means 18/30</span></div>
+                    <div><strong>remaining</strong><span>subtract from the whole first</span></div>
+                    <div><strong>increased by</strong><span>new amount is more than the original</span></div>
+                    <div><strong>reduced by</strong><span>new amount is less than the original</span></div>
+                    <div><strong>ratio</strong><span>add the parts before sharing</span></div>
+                  </div>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Quick worked example</p>
+                  <h4>18 out of 30 pupils walk to school. Write this as FDRP.</h4>
+                  <ol class="worked-list">
+                    <li>Fraction: 18/30. Simplify by dividing by 6, so 18/30 = 3/5.</li>
+                    <li>Decimal: 3 ÷ 5 = 0.6.</li>
+                    <li>Percentage: 0.6 × 100 = 60%.</li>
+                    <li>Ratio walkers:not walkers = 18:12 = 3:2.</li>
+                  </ol>
+                </section>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="guide-panel">
-            <p class="guide-label">The whole</p>
-            <h3>Name 100% before calculating</h3>
-            <p>Ask: “100% of what?” In discount questions, the original price is 100%. In profit questions, the cost price is 100%. In a test score, the total marks are 100%.</p>
-            <div class="concept-table">
-              <div><strong>Situation</strong><strong>100% means</strong></div>
-              <div><span>20% discount</span><span>original price</span></div>
-              <div><span>20% profit</span><span>cost price</span></div>
-              <div><span>40% of pupils</span><span>all pupils</span></div>
-              <div><span>VAT added</span><span>price before VAT</span></div>
-            </div>
-          </article>
-
-          <article class="guide-panel">
-            <p class="guide-label">Fractions, decimals, percentages</p>
-            <h3>Three languages, one value</h3>
-            <p>A percentage is “out of 100”. A decimal is a part of 1. A fraction shows equal parts. Convert to whichever form makes the question easier.</p>
-            <div class="fraction-strip" aria-label="Fraction strip showing three quarters equals 0.75 equals 75 percent">
-              <span></span><span></span><span></span><span class="empty"></span>
-            </div>
-            <div class="equivalence-row">
-              <span>3/4</span>
-              <span>0.75</span>
-              <span>75%</span>
-            </div>
-          </article>
-
-          <article class="guide-panel">
-            <p class="guide-label">Ratio</p>
-            <h3>Parts first, value second</h3>
-            <p>For a ratio of 3:2 with 25 pupils, there are 5 equal parts. Each part is 25 ÷ 5 = 5 pupils.</p>
-            <div class="ratio-blocks" aria-label="Ratio blocks showing 3 blue parts and 2 coral parts">
-              <span class="blue"></span><span class="blue"></span><span class="blue"></span>
-              <span class="coral"></span><span class="coral"></span>
-            </div>
-            <p class="mini-note">3 parts = 15 pupils, 2 parts = 10 pupils.</p>
-          </article>
-
-          <article class="guide-panel">
-            <p class="guide-label">Two-step percentage</p>
-            <h3>Work on what is left</h3>
-            <p>If you spend 40% of your money, you have 60% left. If you then spend half of what is left, that half is half of the 60%, not half of the original.</p>
-            <div class="stacked-bars">
-              <div><span class="spent" style="width: 40%;">40% spent</span><span style="width: 60%;">60% left</span></div>
-              <div><span class="spent" style="width: 40%;">first spent</span><span class="spent-later" style="width: 30%;">half of left</span><span style="width: 30%;">saved</span></div>
-            </div>
-          </article>
-
-          <article class="guide-panel wide">
-            <div class="guide-text">
-              <p class="guide-label">A reliable method</p>
-              <h3>Use D-R-A-W for word problems</h3>
-              <p>When a question feels like a story, slow it down and make the hidden structure visible.</p>
-            </div>
-            <div class="method-grid">
-              <div><strong>D</strong><span>Decide the whole: what is 100% or the total number of parts?</span></div>
-              <div><strong>R</strong><span>Represent it with a bar, fraction strip or ratio table.</span></div>
-              <div><strong>A</strong><span>Apply each change in order: discount, profit, VAT, remaining amount.</span></div>
-              <div><strong>W</strong><span>Work backwards when the final amount is given.</span></div>
-            </div>
-          </article>
-
-          <article class="guide-panel wide">
-            <div class="guide-text">
-              <p class="guide-label">Common traps</p>
-              <h3>Checks before final answer</h3>
-            </div>
-            <div class="trap-grid">
-              <div>
-                <strong>Discount final price is smaller.</strong>
-                <span>If £80 is after 20% off, the original must be more than £80.</span>
+            <article id="guide-fractions" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 2</p>
+                <h3>Fractions</h3>
+                <p>Fractions are about equal parts. They become difficult when the question hides the whole, asks for what remains, or mixes fractions with percentages and ratios.</p>
               </div>
-              <div>
-                <strong>Profit final price is bigger.</strong>
-                <span>If £120 includes 20% profit, the cost must be less than £120.</span>
+
+              <div class="lesson-grid">
+                <section class="lesson-card">
+                  <h4>Read a fraction correctly</h4>
+                  <p>The denominator tells how many equal parts make the whole. The numerator tells how many of those parts are being used.</p>
+                  <div class="fraction-strip labelled" aria-label="Fraction strip showing three fifths">
+                    <span></span><span></span><span></span><span class="empty"></span><span class="empty"></span>
+                  </div>
+                  <div class="equivalence-row">
+                    <span>3 shaded</span>
+                    <span>5 equal parts</span>
+                    <span>3/5</span>
+                  </div>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Core fraction skills</h4>
+                  <ul class="rule-list">
+                    <li>Simplify by dividing the numerator and denominator by the same number.</li>
+                    <li>Compare fractions by using common denominators, decimals or benchmarks like 1/2.</li>
+                    <li>Convert mixed numbers and improper fractions when adding or multiplying.</li>
+                    <li>For a fraction of an amount, divide by the denominator and multiply by the numerator.</li>
+                  </ul>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Forward problem</p>
+                  <h4>Find 3/5 of 60.</h4>
+                  <ol class="worked-list">
+                    <li>One fifth of 60 is 60 ÷ 5 = 12.</li>
+                    <li>Three fifths is 3 × 12 = 36.</li>
+                    <li>So 3/5 of 60 = 36.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Reverse problem</p>
+                  <h4>3/5 of a number is 36. Find the number.</h4>
+                  <ol class="worked-list">
+                    <li>3/5 = 36.</li>
+                    <li>1/5 = 36 ÷ 3 = 12.</li>
+                    <li>5/5 = 12 × 5 = 60.</li>
+                    <li>The whole number is 60.</li>
+                  </ol>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Fractions of what remains</h4>
+                  <p>This is a common two-step trap. If someone spends 1/3 of their money, the remaining amount is 2/3. If they then spend half of what remains, the half is half of the 2/3, not half of the original.</p>
+                  <div class="stacked-bars">
+                    <div><span class="spent" style="width: 33.333%;">1/3 spent</span><span style="width: 66.667%;">2/3 remains</span></div>
+                    <div><span class="spent" style="width: 33.333%;">spent</span><span class="spent-later" style="width: 33.333%;">half of remaining</span><span style="width: 33.333%;">left</span></div>
+                  </div>
+                </section>
               </div>
-              <div>
-                <strong>Successive changes do not cancel.</strong>
-                <span>Down 10% then up 10% gives 99% of the original.</span>
+            </article>
+
+            <article id="guide-decimals" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 3</p>
+                <h3>Decimals</h3>
+                <p>Decimals are parts of 1 written with place value. They are useful for money, measures, calculators and percentage multipliers.</p>
               </div>
-              <div>
-                <strong>Ratios are not fractions until you add parts.</strong>
-                <span>In 3:2, the first share is 3 out of 5 parts.</span>
+
+              <div class="lesson-grid">
+                <section class="lesson-card">
+                  <h4>Place value</h4>
+                  <div class="place-grid" aria-label="Decimal place value grid">
+                    <strong>Ones</strong><strong>.</strong><strong>Tenths</strong><strong>Hundredths</strong><strong>Thousandths</strong>
+                    <span>0</span><span>.</span><span>3</span><span>7</span><span>5</span>
+                  </div>
+                  <p class="mini-note">0.375 means 3 tenths, 7 hundredths and 5 thousandths.</p>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Decimal habits</h4>
+                  <ul class="rule-list">
+                    <li>Line up decimal points when adding or subtracting.</li>
+                    <li>Multiply by 10, 100 or 1000 by moving digits left in the place-value columns.</li>
+                    <li>Round only at the end unless the question asks for an approximate answer.</li>
+                    <li>Use zeros as placeholders: 0.4 = 0.40 = 0.400.</li>
+                  </ul>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Fraction to decimal</p>
+                  <h4>Write 3/8 as a decimal.</h4>
+                  <ol class="worked-list">
+                    <li>A fraction bar means divide: 3 ÷ 8.</li>
+                    <li>3 ÷ 8 = 0.375.</li>
+                    <li>So 3/8 = 0.375.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Decimal of an amount</p>
+                  <h4>0.35 of 40 pupils walk to school.</h4>
+                  <ol class="worked-list">
+                    <li>0.35 of 40 means 0.35 × 40.</li>
+                    <li>0.35 × 40 = 14.</li>
+                    <li>So 14 pupils walk to school.</li>
+                  </ol>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Decimals connect to percentages</h4>
+                  <div class="conversion-flow">
+                    <span>0.08</span>
+                    <span>8/100</span>
+                    <span>8%</span>
+                  </div>
+                  <p>To change a decimal to a percentage, multiply by 100. To change a percentage to a decimal, divide by 100.</p>
+                </section>
               </div>
-            </div>
-          </article>
+            </article>
+
+            <article id="guide-ratios" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 4</p>
+                <h3>Ratios</h3>
+                <p>A ratio compares parts. The most important step is adding the parts before sharing, because a ratio of 3:2 has 5 total parts.</p>
+              </div>
+
+              <div class="lesson-grid">
+                <section class="lesson-card">
+                  <h4>Parts first</h4>
+                  <div class="ratio-blocks" aria-label="Ratio blocks showing 3 blue parts and 2 coral parts">
+                    <span class="blue"></span><span class="blue"></span><span class="blue"></span>
+                    <span class="coral"></span><span class="coral"></span>
+                  </div>
+                  <p class="mini-note">3:2 means 3 parts to 2 parts. Total parts = 5.</p>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Ratio question types</h4>
+                  <ul class="rule-list">
+                    <li>Simplify a ratio by dividing all parts by the same number.</li>
+                    <li>Share an amount by adding parts, finding one part, then multiplying.</li>
+                    <li>If one part is given, use it to find the value of one ratio part.</li>
+                    <li>Convert ratio to fraction by placing one part over total parts.</li>
+                  </ul>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Sharing</p>
+                  <h4>Share £45 in the ratio 2:3.</h4>
+                  <ol class="worked-list">
+                    <li>Total parts = 2 + 3 = 5.</li>
+                    <li>One part = £45 ÷ 5 = £9.</li>
+                    <li>First share = 2 × £9 = £18.</li>
+                    <li>Second share = 3 × £9 = £27.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Given one side</p>
+                  <h4>Flour:sugar = 5:2. Sugar is 140 g. Find flour.</h4>
+                  <ol class="worked-list">
+                    <li>Sugar is 2 parts and equals 140 g.</li>
+                    <li>One part = 140 ÷ 2 = 70 g.</li>
+                    <li>Flour is 5 parts, so 5 × 70 = 350 g.</li>
+                  </ol>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Ratio to fraction and percentage</h4>
+                  <p>If boys:girls = 3:2, then boys are 3 out of 5 parts. Boys are 3/5 = 0.6 = 60% of the group. Girls are 2/5 = 0.4 = 40%.</p>
+                </section>
+              </div>
+            </article>
+
+            <article id="guide-percentages" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 5</p>
+                <h3>Percentages</h3>
+                <p>A percentage means parts per 100. Percentage questions become easier when she can move between mental methods, fractions and decimal multipliers.</p>
+              </div>
+
+              <div class="lesson-grid">
+                <section class="lesson-card">
+                  <h4>Common percentage facts</h4>
+                  <div class="key-table compact">
+                    <div><strong>Percentage</strong><strong>Fraction</strong><strong>Decimal</strong></div>
+                    <div><span>50%</span><span>1/2</span><span>0.5</span></div>
+                    <div><span>25%</span><span>1/4</span><span>0.25</span></div>
+                    <div><span>75%</span><span>3/4</span><span>0.75</span></div>
+                    <div><span>10%</span><span>1/10</span><span>0.1</span></div>
+                    <div><span>12.5%</span><span>1/8</span><span>0.125</span></div>
+                  </div>
+                </section>
+
+                <section class="lesson-card">
+                  <h4>Find a percentage of an amount</h4>
+                  <p>Use either a mental split or a decimal multiplier.</p>
+                  <ol class="worked-list">
+                    <li>15% of £80 = 10% + 5%.</li>
+                    <li>10% of £80 = £8.</li>
+                    <li>5% of £80 = £4.</li>
+                    <li>15% = £12.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Percentage increase</p>
+                  <h4>A score of 50 increases by 30%.</h4>
+                  <ol class="worked-list">
+                    <li>30% of 50 = 15.</li>
+                    <li>New score = 50 + 15 = 65.</li>
+                    <li>Multiplier method: 1.30 × 50 = 65.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Percentage decrease</p>
+                  <h4>Headphones cost £120 and are reduced by 10%.</h4>
+                  <ol class="worked-list">
+                    <li>After 10% off, the customer pays 90%.</li>
+                    <li>90% of £120 = 0.9 × 120 = £108.</li>
+                    <li>The sale price is £108.</li>
+                  </ol>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Percentage change formula</h4>
+                  <p>To find a percentage increase or decrease from old to new:</p>
+                  <div class="formula-box">change ÷ original × 100%</div>
+                  <p>Example: from 40 to 50, the change is 10. Percentage increase = 10 ÷ 40 × 100 = 25%.</p>
+                </section>
+              </div>
+            </article>
+
+            <article id="guide-reverse" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 6</p>
+                <h3>Reverse Percentages</h3>
+                <p>Reverse percentage questions give the final amount and ask for the original. The key is: the final amount is often not 100%.</p>
+              </div>
+
+              <div class="lesson-grid">
+                <section class="lesson-card wide">
+                  <h4>Discount: the sale price is not 100%</h4>
+                  <p>If a jacket is sold for 20% off at £80, the £80 is 80% of the original price, not 100%.</p>
+                  <div class="diagram percent-diagram" aria-label="Bar model showing 80 percent equals 80 pounds and 100 percent equals 100 pounds">
+                    <div class="bar-title">Original price = 100%</div>
+                    <div class="percent-bar full">
+                      <span class="bar-fill discount" style="width: 80%;">80% paid = £80</span>
+                      <span class="bar-fill missing" style="width: 20%;">20% off</span>
+                    </div>
+                    <div class="bar-notes">
+                      <span>80% = £80, so 1% = £1.</span>
+                      <span>100% = £100.</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Profit: the selling price can be more than 100%</h4>
+                  <p>If a shop sells an item for £120 after 20% profit, the £120 is 120% of the cost price.</p>
+                  <div class="diagram percent-diagram" aria-label="Bar model showing 120 percent equals 120 pounds">
+                    <div class="bar-title">Cost price = 100%</div>
+                    <div class="percent-bar overflow">
+                      <span class="bar-fill base" style="width: 83.333%;">100% cost = £100</span>
+                      <span class="bar-fill profit" style="width: 16.667%;">20% profit</span>
+                    </div>
+                    <div class="bar-notes">
+                      <span>Selling price = 120%.</span>
+                      <span>£120 ÷ 1.2 = £100.</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Unitary method</p>
+                  <h4>A bike costs £255 after a 15% discount. Find the original.</h4>
+                  <ol class="worked-list">
+                    <li>After 15% off, the sale price is 85%.</li>
+                    <li>85% = £255.</li>
+                    <li>1% = £255 ÷ 85 = £3.</li>
+                    <li>100% = £300.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Multiplier method</p>
+                  <h4>After a 10% pay rise, salary is £1980. Find the old salary.</h4>
+                  <ol class="worked-list">
+                    <li>After a 10% rise, the new salary is 110% of the old salary.</li>
+                    <li>110% = 1.10 as a multiplier.</li>
+                    <li>Old salary = £1980 ÷ 1.10 = £1800.</li>
+                  </ol>
+                </section>
+
+                <section class="warning-box wide">
+                  <h4>Common mistake: adding 20% to the sale price</h4>
+                  <p>If £80 is after 20% off, doing £80 + 20% of £80 gives £96. That is wrong because the 20% discount came from the original price, not from the sale price. Always ask: what amount is the percentage taken from?</p>
+                </section>
+              </div>
+            </article>
+
+            <article id="guide-wordproblems" class="guide-page">
+              <div class="chapter-intro">
+                <p class="guide-label">Chapter 7</p>
+                <h3>Word Problems and Multi-Step Thinking</h3>
+                <p>Harder questions are not harder because the arithmetic is impossible. They are harder because the story hides the order of steps. Use the D-R-A-W method every time.</p>
+              </div>
+
+              <div class="lesson-grid">
+                <section class="lesson-card wide">
+                  <h4>D-R-A-W method</h4>
+                  <div class="method-grid">
+                    <div><strong>D</strong><span>Decide the whole: what is 100%, 1 whole, or all the ratio parts?</span></div>
+                    <div><strong>R</strong><span>Represent it with a bar, fraction strip, ratio table or short equation.</span></div>
+                    <div><strong>A</strong><span>Apply each change in the order it happens.</span></div>
+                    <div><strong>W</strong><span>Work backwards if the final amount is given.</span></div>
+                  </div>
+                </section>
+
+                <section class="worked-example wide">
+                  <p class="guide-label">Full walkthrough</p>
+                  <h4>Tara spends 40% of her money. She then saves half of what is left, which is £18. How much did she have at the start?</h4>
+                  <ol class="worked-list">
+                    <li>Decide the whole: the starting money is 100%.</li>
+                    <li>After spending 40%, she has 60% left.</li>
+                    <li>She saves half of the remaining 60%, so she saves 30% of the original.</li>
+                    <li>30% = £18.</li>
+                    <li>10% = £6, so 100% = £60.</li>
+                    <li>Check: 40% of £60 is £24 spent, £36 remains, half of £36 is £18 saved.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Ratio then percentage</p>
+                  <h4>Girls:boys = 4:5. There are 27 pupils. One third of the girls bring lunch.</h4>
+                  <ol class="worked-list">
+                    <li>Total parts = 4 + 5 = 9.</li>
+                    <li>One part = 27 ÷ 9 = 3 pupils.</li>
+                    <li>Girls = 4 × 3 = 12.</li>
+                    <li>One third of 12 = 4 girls.</li>
+                  </ol>
+                </section>
+
+                <section class="worked-example">
+                  <p class="guide-label">Successive changes</p>
+                  <h4>A price falls by 10%, then rises by 10%. Is it back to the original?</h4>
+                  <ol class="worked-list">
+                    <li>Start with £100 to test the idea.</li>
+                    <li>After 10% off, price is £90.</li>
+                    <li>10% rise on £90 is £9, so new price is £99.</li>
+                    <li>It is not back to £100 because the second 10% used a different whole.</li>
+                  </ol>
+                </section>
+
+                <section class="lesson-card wide">
+                  <h4>Final answer checks</h4>
+                  <div class="trap-grid">
+                    <div><strong>Discount original</strong><span>If the price was reduced, the original should be higher than the sale price.</span></div>
+                    <div><strong>Profit cost</strong><span>If the selling price includes profit, the cost price should be lower than the selling price.</span></div>
+                    <div><strong>Ratio shares</strong><span>All shares should add back to the total.</span></div>
+                    <div><strong>Fraction of remainder</strong><span>Make sure the second fraction is taken from what remains, not from the original.</span></div>
+                  </div>
+                </section>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 

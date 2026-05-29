@@ -129,6 +129,7 @@ h3 {
 }
 
 .tab-button,
+.guide-tab,
 .level-tab,
 .primary-button,
 .secondary-button,
@@ -147,6 +148,7 @@ h3 {
 }
 
 .tab-button.active,
+.guide-tab.active,
 .level-tab.active,
 .primary-button {
   background: var(--green);
@@ -155,6 +157,7 @@ h3 {
 }
 
 .tab-button:focus-visible,
+.guide-tab:focus-visible,
 .level-tab:focus-visible,
 .primary-button:focus-visible,
 .secondary-button:focus-visible,
@@ -192,6 +195,284 @@ main {
   max-width: 660px;
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.guide-shell {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.guide-nav {
+  position: sticky;
+  top: 76px;
+  display: grid;
+  gap: 8px;
+}
+
+.guide-tab {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  min-height: 46px;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.guide-tab span {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.guide-tab.active span {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.guide-pages {
+  min-width: 0;
+}
+
+.guide-page {
+  display: none;
+}
+
+.guide-page.active {
+  display: block;
+}
+
+.chapter-intro {
+  margin-bottom: 16px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.chapter-intro h3 {
+  margin-bottom: 8px;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+}
+
+.chapter-intro p:last-child {
+  max-width: 860px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.lesson-card,
+.worked-example,
+.warning-box {
+  min-width: 0;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.worked-example {
+  background: #f4f7fb;
+  border-color: #c8d8e7;
+}
+
+.warning-box {
+  background: #fff7df;
+  border-color: #ecd17a;
+}
+
+.lesson-card.wide,
+.worked-example.wide,
+.warning-box.wide {
+  grid-column: 1 / -1;
+}
+
+.lesson-card h4,
+.worked-example h4,
+.warning-box h4 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+}
+
+.lesson-card p:last-child,
+.worked-example p:last-child,
+.warning-box p:last-child {
+  margin-bottom: 0;
+}
+
+.rule-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.rule-list li {
+  margin: 7px 0;
+}
+
+.key-table {
+  display: grid;
+  margin-top: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.key-table > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.key-table.compact > div {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.key-table > div:first-child {
+  background: var(--surface-strong);
+}
+
+.key-table span,
+.key-table strong {
+  min-width: 0;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.key-table span + span,
+.key-table strong + strong {
+  border-left: 1px solid var(--line);
+}
+
+.key-table > div:last-child span {
+  border-bottom: 0;
+}
+
+.conversion-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.conversion-flow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 8px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.conversion-flow span:nth-child(1) {
+  background: #eef4ef;
+}
+
+.conversion-flow span:nth-child(2) {
+  background: #f4f7fb;
+}
+
+.conversion-flow span:nth-child(3) {
+  background: #fff7df;
+}
+
+.conversion-flow span:nth-child(4) {
+  background: #fff0ee;
+}
+
+.clue-list {
+  display: grid;
+  gap: 8px;
+}
+
+.clue-list div {
+  display: grid;
+  grid-template-columns: minmax(82px, 0.28fr) 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 10px;
+  background: var(--surface-strong);
+  border-radius: 8px;
+}
+
+.clue-list strong {
+  color: var(--green);
+}
+
+.clue-list span {
+  color: var(--muted);
+}
+
+.place-grid {
+  display: grid;
+  grid-template-columns: 1fr 32px repeat(3, 1fr);
+  overflow: hidden;
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.place-grid strong,
+.place-grid span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 8px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.place-grid strong {
+  background: var(--surface-strong);
+  font-size: 0.86rem;
+}
+
+.place-grid span {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.place-grid strong:nth-child(5),
+.place-grid span:nth-child(10) {
+  border-right: 0;
+}
+
+.place-grid span:nth-child(n + 6) {
+  border-bottom: 0;
+}
+
+.formula-box {
+  display: inline-flex;
+  max-width: 100%;
+  margin: 8px 0 12px;
+  padding: 12px 14px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--green-dark);
+  font-weight: 900;
 }
 
 .guide-grid {
@@ -332,6 +613,10 @@ main {
   padding: 4px;
   border: 2px solid var(--ink);
   border-radius: 8px;
+}
+
+.fraction-strip.labelled {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .fraction-strip span {
@@ -732,10 +1017,17 @@ main {
     width: 100%;
   }
 
+  .guide-shell,
   .guide-grid,
   .guide-panel.wide,
-  .bank-layout {
+  .bank-layout,
+  .lesson-grid {
     grid-template-columns: 1fr;
+  }
+
+  .guide-nav {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .question-sidebar {
@@ -765,14 +1057,43 @@ main {
   }
 
   .guide-panel,
+  .lesson-card,
+  .worked-example,
+  .warning-box,
+  .chapter-intro,
   .question-workspace {
     padding: 16px;
   }
 
   .bar-notes,
   .method-grid,
-  .trap-grid {
+  .trap-grid,
+  .conversion-flow,
+  .clue-list div {
     grid-template-columns: 1fr;
+  }
+
+  .guide-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .key-table > div,
+  .key-table.compact > div {
+    grid-template-columns: 1fr;
+  }
+
+  .key-table span + span,
+  .key-table strong + strong {
+    border-left: 0;
+  }
+
+  .place-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .place-grid strong,
+  .place-grid span {
+    border-right: 0;
   }
 
   .percent-bar {
